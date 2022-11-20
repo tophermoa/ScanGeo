@@ -1,22 +1,40 @@
-import logo from './logo.svg';
 import './App.css';
+import Exifreader from './components/Exifreader';
+import Qrcode from './components/Qrcode';
+import CurrentMap from './components/CurrentMap';
+import { useState } from 'react';
 
 function App() {
+  const [show, setShow] = useState(false);
+  const [lat, setLat] = useState(null);
+  const [lng, setLong] = useState(null);
+  const [desc, setDesc] = useState("");
+  const setButton = () => {
+    setShow(!show);
+  }
+  const setLati = (param) => {
+    setLat(param)
+  }
+  const setLongi = (param) => {
+    setLong(param)
+  }
+  const setDescrip = (param) =>{
+    setDesc(param)
+  }
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        {show === false ? null : 
+          <Qrcode 
+            btnshow={setButton}
+            setLatState={setLati}
+            setLongState={setLongi}
+            setDescrip={setDescrip}
+          />        
+        }
+        <button onClick={() => setButton()}>{show === false ? "Scan QR" : "Stop Scanning"}</button>
+      <Exifreader setLatState={setLati} setLongState={setLongi} setDescrip={setDescrip} />
+      <CurrentMap currLat={lat} currLng={lng} desc={desc} />
       </header>
     </div>
   );
