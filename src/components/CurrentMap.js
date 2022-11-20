@@ -1,5 +1,10 @@
 import 'mapbox-gl/dist/mapbox-gl.css';
 import Map, {Marker, useMap} from 'react-map-gl';
+import mapboxgl from 'mapbox-gl';
+
+// @ts-ignore
+// eslint-disable-next-line import/no-webpack-loader-syntax
+mapboxgl.workerClass = require('worker-loader!mapbox-gl/dist/mapbox-gl-csp-worker').default;
 
 const CurrentMap = (props) =>{
     const HiddenComp = () => {
