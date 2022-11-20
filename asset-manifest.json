@@ -1,17 +1,16 @@
 {
   "files": {
     "main.css": "/ScanGeo/static/css/main.8af6c1bc.css",
-    "main.js": "/ScanGeo/static/js/main.5d772668.js",
-    "static/js/483.8de665c5.chunk.js": "/ScanGeo/static/js/483.8de665c5.chunk.js",
+    "main.js": "/ScanGeo/static/js/main.d313f8bf.js",
     "static/js/787.c21c7f78.chunk.js": "/ScanGeo/static/js/787.c21c7f78.chunk.js",
+    "static/js/mapbox-gl-csp-worker.4f3ccc49.worker.js": "/ScanGeo/static/js/mapbox-gl-csp-worker.4f3ccc49.worker.js",
     "index.html": "/ScanGeo/index.html",
     "main.8af6c1bc.css.map": "/ScanGeo/static/css/main.8af6c1bc.css.map",
-    "main.5d772668.js.map": "/ScanGeo/static/js/main.5d772668.js.map",
-    "483.8de665c5.chunk.js.map": "/ScanGeo/static/js/483.8de665c5.chunk.js.map",
+    "main.d313f8bf.js.map": "/ScanGeo/static/js/main.d313f8bf.js.map",
     "787.c21c7f78.chunk.js.map": "/ScanGeo/static/js/787.c21c7f78.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.8af6c1bc.css",
-    "static/js/main.5d772668.js"
+    "static/js/main.d313f8bf.js"
   ]
 }
